@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "KwikMedical.Data", "KwikMedical.Data\KwikMedical.Data.sqlproj", "{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedical.OperatorView", "KwikMedical.OperatorView\KwikMedical.OperatorView.csproj", "{6D951AB9-2BC1-4E35-B9B6-0AB53B31DE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedical.HospitalView", "KwikMedical.HospitalView\KwikMedical.HospitalView.csproj", "{CCFF52CF-0DEF-4E88-9A1F-1A19394527D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedical.AmbulanceView", "KwikMedical.AmbulanceView\KwikMedical.AmbulanceView.csproj", "{6F5761D8-CED4-4033-84DD-BAAA65DF3974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedicalSystem.Business", "KwikMedicalSystem.Business\KwikMedicalSystem.Business.csproj", "{F9B649E0-343A-4AE5-A7AF-96D8D427F52B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedicalSystem.DAL", "KwikMedicalSystem.DAL\KwikMedicalSystem.DAL.csproj", "{85D17F57-8437-4F40-9361-31C48B9490C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6DE4C05-9150-4A9C-8C45-E1ABA40AC6B5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6D951AB9-2BC1-4E35-B9B6-0AB53B31DE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D951AB9-2BC1-4E35-B9B6-0AB53B31DE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D951AB9-2BC1-4E35-B9B6-0AB53B31DE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D951AB9-2BC1-4E35-B9B6-0AB53B31DE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFF52CF-0DEF-4E88-9A1F-1A19394527D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFF52CF-0DEF-4E88-9A1F-1A19394527D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFF52CF-0DEF-4E88-9A1F-1A19394527D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFF52CF-0DEF-4E88-9A1F-1A19394527D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5761D8-CED4-4033-84DD-BAAA65DF3974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5761D8-CED4-4033-84DD-BAAA65DF3974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5761D8-CED4-4033-84DD-BAAA65DF3974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5761D8-CED4-4033-84DD-BAAA65DF3974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B649E0-343A-4AE5-A7AF-96D8D427F52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B649E0-343A-4AE5-A7AF-96D8D427F52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B649E0-343A-4AE5-A7AF-96D8D427F52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B649E0-343A-4AE5-A7AF-96D8D427F52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85D17F57-8437-4F40-9361-31C48B9490C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D17F57-8437-4F40-9361-31C48B9490C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D17F57-8437-4F40-9361-31C48B9490C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D17F57-8437-4F40-9361-31C48B9490C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04430C0A-B971-4E65-98CE-0ECA0FC54D5C}
+	EndGlobalSection
+EndGlobal

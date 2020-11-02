@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="7c65d591-12d9-4547-a802-ecc83ed6533d" ChangeDateTime="10/31/2020 13:50:19">
+    <Property Name="ElementName" Value="[dbo].[IncidentReports].[PatientID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[IncidentReports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PatientNHSNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="18c40df9-11a1-4eb5-aeb5-2268d002b452" ChangeDateTime="10/31/2020 14:00:06">
+    <Property Name="ElementName" Value="[dbo].[IncidentReports].[CallTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[IncidentReports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WaitingTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="256c2a37-f190-435f-aabc-4e67379445f7" ChangeDateTime="11/01/2020 11:17:04">
+    <Property Name="ElementName" Value="[dbo].[IncidentReports].[AssignedHospital]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[IncidentReports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AssignedHospitalID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e6882be6-bbc4-4086-9308-5dd5f47c8616" ChangeDateTime="11/01/2020 11:17:08">
+    <Property Name="ElementName" Value="[dbo].[IncidentReports].[IncidentId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[IncidentReport]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IncidentID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="547d8712-7d35-4f96-b9a3-9b19266fccef" ChangeDateTime="11/01/2020 11:17:14">
+    <Property Name="ElementName" Value="[dbo].[Patients].[PatientId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Patients]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PatientID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9a6dfd8b-56e0-4fa9-9b4b-3a47268323eb" ChangeDateTime="11/01/2020 11:34:33">
+    <Property Name="ElementName" Value="[dbo].[IncidentReports].[Closed]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[IncidentReports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IncidentCaseClosed" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1d113d67-a60d-4f20-897c-98eab3d921d5" ChangeDateTime="11/01/2020 11:34:55">
+    <Property Name="ElementName" Value="[dbo].[IncidentReports].[IncidentCaseClosed]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[IncidentReports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CaseClosed" />
+  </Operation>
+</Operations>
