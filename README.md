@@ -1,4 +1,4 @@
 # KwikMedicalSystem
 Prototype App for KwikMedicalSystem. 
 
-I used the three-layered architecture, MVVM, and SQL Server.
+A C#, WPF, and .NET project using the three-layered architecture, MVVM, and SQL Server.
