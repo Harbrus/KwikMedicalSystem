@@ -1,0 +1,31 @@
+﻿<Window x:Class="KwikMedical.HospitalView.UpdatePatientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KwikMedical.HospitalView"
+        mc:Ignorable="d"
+        Title="UpdatePatientWindow" Height="465.882" Width="408.235">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Patient Details" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" HorizontalAlignment="Left" Height="41" Margin="108,13,0,0" VerticalAlignment="Top" Width="174" Grid.ColumnSpan="2"/>
+        <Label Content="NHS Number" HorizontalAlignment="Left" Height="29" Margin="51,67,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="NHSNumber" Text="{Binding NHSNumber, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="141,63,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" TextChanged="NHSNumber_TextChanged" Grid.ColumnSpan="2"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="29" Margin="51,115,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="FirstName" Text="{Binding FirstName, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="141,111,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Height="29" Margin="51,164,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="LastName"  Text="{Binding LastName, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="141,160,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" RenderTransformOrigin="0.519,1.544" Grid.ColumnSpan="2"/>
+        <Label Content="Date of Birth" HorizontalAlignment="Left" Height="29" Margin="51,213,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="85"/>
+        <DatePicker x:Name="DOB" SelectedDate="{Binding DOB, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="141,209,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="175" HorizontalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label Content="Address" HorizontalAlignment="Left" Height="29" Margin="51,261,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Address" Text="{Binding Address, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="141,257,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2"/>
+        <Label  Content=" Medical &#xA;Condition" HorizontalAlignment="Left" Height="44" Margin="51,311,0,0" VerticalAlignment="Top" Width="85" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="MedicalCondition" Text="{Binding MedicalCondition, Mode=TwoWay}" HorizontalAlignment="Left" Height="48" Margin="141,307,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2"/>
+        <Button Content="Update" Command="{Binding UpdatePatient}" HorizontalAlignment="Left" Margin="141,371,0,0" VerticalAlignment="Top" Width="82" Height="38" Grid.ColumnSpan="2"/>
+        <Button Content="Close" Command="{Binding Close}" HorizontalAlignment="Left" Margin="59.324,371,0,0" VerticalAlignment="Top" Width="82" Height="38" Click="Button_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
