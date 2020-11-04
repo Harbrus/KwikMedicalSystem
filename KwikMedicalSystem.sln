@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedicalSystem.Business"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikMedicalSystem.DAL", "KwikMedicalSystem.DAL\KwikMedicalSystem.DAL.csproj", "{85D17F57-8437-4F40-9361-31C48B9490C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassDiagrams", "ClassDiagrams", "{B00E1870-0F12-4101-A9CD-BDD6CF8FC0EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

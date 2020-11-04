@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KwikMedicalSystem.Business.ViewModels;
 
 namespace KwikMedical.AmbulanceView
 {
@@ -20,9 +21,11 @@ namespace KwikMedical.AmbulanceView
     /// </summary>
     public partial class MainWindow : Window
     {
+        AmbulanceViewModel AmbulanceViewModel = new AmbulanceViewModel();
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = AmbulanceViewModel;
         }
     }
 }

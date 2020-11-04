@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KwikMedicalSystem.Business\KwikMedicalSystem.Business.csproj">
+      <Project>{f9b649e0-343a-4ae5-a7af-96d8d427f52b}</Project>
+      <Name>KwikMedicalSystem.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

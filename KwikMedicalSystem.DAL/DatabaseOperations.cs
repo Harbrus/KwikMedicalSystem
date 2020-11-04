@@ -78,6 +78,23 @@ namespace KwikMedicalSystem.DAL
             }
         }
 
+        public static IncidentReport SearchIncident(string assignedAmbulanceID)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("KwikMedicalDB")))
+            {
+                var incident = connection.Query<IncidentReport>($"select * from IncidentReports where AssignedAmbulanceID='{assignedAmbulanceID}' AND CaseClosed = 0");
+
+                if (incident != null)
+                {
+                    return incident.FirstOrDefault();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
         public static void UpdatePatientRecord(Patient patient)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("KwikMedicalDB")))

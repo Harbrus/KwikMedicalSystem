@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KwikMedical.AmbulanceView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ambulance" Height="463.235" Width="352.647">
     <Grid>
-        
+        <Label Content="Ambulance ID" HorizontalAlignment="Left" Height="29" Margin="35,61,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <Label Content="WaitingTime" HorizontalAlignment="Left" Height="27" Margin="35,231,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Location" Text="{Binding WaitingTime, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="125,227,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Incident Date" HorizontalAlignment="Left" Height="27" Margin="35,276,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="85"/>
+        <DatePicker x:Name="IncidentDate" SelectedDate="{Binding IncidentDate, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="125,272,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="175" HorizontalContentAlignment="Center"/>
+        <Label Content="Selected Incident" HorizontalAlignment="Left" Height="27" Margin="105,13,0,0" VerticalAlignment="Top" Width="165" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Details" HorizontalAlignment="Left" Height="27" Margin="35,99,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Location_Copy" Text="{Binding IncidentDetails, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="125,99,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Location" HorizontalAlignment="Left" Height="27" Margin="35,144,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Location_Copy1" Text="{Binding Location, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="125,140,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Action Taken" HorizontalAlignment="Left" Height="27" Margin="35,188,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Location_Copy2" Text="{Binding ActionTaken, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="125,184,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Send Details" Command="{Binding SendDetails}" HorizontalAlignment="Left" Margin="125,371,0,0" VerticalAlignment="Top" Width="89" Height="27"/>
+        <Button Content="Clear" Command="{Binding ClearIncident}" HorizontalAlignment="Left" Margin="229,371,0,0" VerticalAlignment="Top" Width="73" Height="27" RenderTransformOrigin="-3.868,-0.127"/>
+        <Button Content="Search Incident" Command="{Binding SearchIncident}" HorizontalAlignment="Left" Margin="209,60,0,0" VerticalAlignment="Top" Width="91" Height="27" />
+        <TextBox x:Name="Location_Copy5" Text="{Binding AssignedAmbulanceID, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="125,59,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <Label Content="Case Closed" HorizontalAlignment="Left" Height="27" Margin="35,316,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="85"/>
+        <CheckBox IsChecked="{Binding CaseClosed, Mode=TwoWay}" HorizontalAlignment="Left" Margin="125,322,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
