@@ -97,8 +97,8 @@ namespace KwikMedicalSystem.Business.ViewModels
             LastName = Patient.LastName;
             DOB = Patient.DOB;
             Address = Patient.Address;
-            MedicalCondition = MedicalCondition;
-            PatientNHSNumber = patient.NHSNumber.ToString();
+            MedicalCondition = Patient.MedicalCondition;
+            PatientNHSNumber = Patient.NHSNumber.ToString();
             IncidentDate = DateTime.Now;
 
             OnChanged(nameof(NHSNumber));

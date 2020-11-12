@@ -71,7 +71,8 @@ namespace KwikMedicalSystem.DAL
             {
                 string updateQuery = @"UPDATE IncidentReports SET IncidentDetails = @IncidentDetails, Location = @Location,
                                      IncidentDate = @IncidentDate, ActionTaken = @ActionTaken, WaitingTime = @WaitingTime,
-                                     AssignedAmbulanceID = @AssignedAmbulanceID, PatientNHSNumber = @PatientNHSNumber
+                                     AssignedAmbulanceID = @AssignedAmbulanceID, PatientNHSNumber = @PatientNHSNumber, 
+                                        CaseClosed = @CaseClosed
                                      WHERE IncidentID = @IncidentID";
 
                 connection.Execute(updateQuery, incidentReport);

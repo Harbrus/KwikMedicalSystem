@@ -82,7 +82,7 @@ namespace KwikMedicalSystem.Business.ViewModels
             set
             {
                 caseClosed = value;
-                OnChanged(nameof(Location));
+                OnChanged(nameof(CaseClosed));
             }
         }
 

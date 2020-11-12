@@ -23,7 +23,7 @@
         <Button Content="Search/Add Patient" Command="{Binding SearchAddPatient}" HorizontalAlignment="Left" Margin="141,371,0,0" VerticalAlignment="Top" Width="175" Height="38"/>
         <Label Content="Incident Report" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" HorizontalAlignment="Left" Height="41" Margin="438,14,0,0" VerticalAlignment="Top" Width="174"/>
         <Label Content="NHS Number" HorizontalAlignment="Left" Height="29" Margin="376,114,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="NHSNumber2" Text="{Binding PatientNHSNumber, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="466,110,0,0" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBlock x:Name="PatientNHSNumber" Text="{Binding PatientNHSNumber, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="466,110,0,0" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
         <Label Content="Location" HorizontalAlignment="Left" Height="29" Margin="376,162,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85"/>
         <TextBox x:Name="Location" Text="{Binding Location, Mode=TwoWay}" HorizontalAlignment="Left" Height="33" Margin="466,158,0,0" TextAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
         <Label Content=" Assign &#xD;&#xA;Hospital" HorizontalAlignment="Left" Height="44" Margin="376,207,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.517,1.212"/>
